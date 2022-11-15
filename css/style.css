@@ -21,10 +21,39 @@
 /* ============================================================================= */
 
 /* MAIN */
+.big-container{
+    max-width: 575px;
+    height: calc(100vh - 100px);
+    background-color: blueviolet;
+}
+
+/* side bar */
+.aside .container{
+    width: 75px;
+    height: calc(100vh - 100px);
+    background-color: red;
+}
 
 
 
+/* top bar */
+.topbar .container{
+    width: calc(100vw - 75px);
+    height: 75px;
+    background-color: rgba(0,0,0,0.75);
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
 
+.topbar .container a{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: small;
+    border-radius: 25px;
+    text-decoration: none;
+}
 
 /* ============================================================================= */
 
@@ -34,6 +63,7 @@ footer{
 }
 
 footer .container{
+    margin: 0 auto;
     align-items: center;
     justify-content: space-between;
     max-width: 575px;

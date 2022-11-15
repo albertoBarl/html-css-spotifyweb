@@ -25,7 +25,8 @@ footer{
 
 footer .container{
     align-items: center;
-    max-width: 427px;
+    justify-content: space-between;
+    max-width: 575px;
     height: 100px;
     margin: 0 auto;
     color: #878787;
@@ -33,7 +34,6 @@ footer .container{
 
 .footer-left, .footer-center, .footer-right{
     align-items: center;
-    width: calc(100% / 3);
     height: 75px;
 }
 
@@ -57,8 +57,12 @@ footer .container{
     font-size: .75rem;
 }
 
+.footer-left div:last-child{
+    flex-direction: column;
+}
+
 .footer-left div:last-child *{
-    padding-right: 3px
+    padding-top: 5px
 }
 
 
@@ -71,17 +75,18 @@ footer .container{
 
 .footer-center div:first-child *{
     padding: 0px 6px 0 6px;
-    font-size: 20px
+    font-size: 30px
 }
 
 .playing-bar{
     align-items: center;
+    margin-top: 20px;
 }
 
 .playing-bar div:nth-child(2){
     margin: 0px 5px;
     height: 3px;
-    width: 80px;
+    width: 150px;
     background-color: #878787;
     border-radius: 20%;
 }
@@ -111,7 +116,7 @@ footer .container{
 
 .volume div{
     height: 3px;
-    width: 50px;
+    width: 75px;
     background-color: #878787;
     border-radius: 20%;
 }

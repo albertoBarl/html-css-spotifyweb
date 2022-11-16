@@ -128,6 +128,8 @@ footer .container{
 }
 
 .playing-bar{
+    width: 100%;
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
@@ -135,7 +137,7 @@ footer .container{
 .playing-bar div:nth-child(2){
     margin: 0px 5px;
     height: 3px;
-    width: 150px;
+    width: 75%;
     background-color: #878787;
     border-radius: 20%;
 }

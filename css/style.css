@@ -124,7 +124,7 @@ aside div:last-child div:last-child{
 /* ========== main content ========== */
 .main-content{
     background-color: #141922;
-    width: calc(100% - 45px);
+    width: 100%;
     height: 100%;
 }
 /* ===== topbar ===== */
@@ -154,6 +154,33 @@ aside div:last-child div:last-child{
     overflow-y: auto;
 }
 
+/* pages */
+.central-main div:first-child{
+    justify-content: center;
+    font-size: small;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* recently played */
+.central-main div:nth-child(2) h3{
+    margin-bottom: 15px;
+    color: white;
+}
+
+.central-main div:nth-child(2) div{
+    gap: 20px;
+}
+
+.central-main div:nth-child(2) div div{
+    width: 200px;
+    text-align: center;
+}
+
+.central-main div:nth-child(2) img{
+    width: 100%;
+    height: auto;
+}
 
 
 

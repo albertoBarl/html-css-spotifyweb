@@ -159,7 +159,6 @@ aside div:last-child div:last-child{
     justify-content: center;
     font-size: small;
     gap: 20px;
-    margin-bottom: 30px;
 }
 
 /* recently played */
@@ -185,6 +184,17 @@ aside div:last-child div:last-child{
     width: 100%;
     height: auto;
     margin-bottom: 5px;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
 }
 
 /* for John Doe */
@@ -227,17 +237,6 @@ aside div:last-child div:last-child{
     border-radius: 100%;
     margin-bottom: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ================================= FOOTER ================================= */
@@ -327,3 +326,18 @@ footer{
     background-color: #878787;
     border-radius: 20%;
 }
+
+/* ============================== EFFECTS ============================== */
+.upgrade:hover{
+    transform: scale(1.1);
+}
+
+h5:hover{
+    color: greenyellow;
+}
+
+span:hover, li:hover, label:hover{
+    color: white;
+}
+
+

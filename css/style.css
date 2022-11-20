@@ -36,6 +36,10 @@
     margin-right: 5px;
 }
 
+.mb-30{
+    margin-bottom: 30px;
+}
+
 .d-none{
     display: none;
 }
@@ -102,7 +106,7 @@ aside div:first-child div:nth-child(2) *{
 }
 
 li{
-    list-style: none;
+    list-style-type: none;
     color: grey;
 }
 
@@ -136,6 +140,7 @@ aside div:last-child div:last-child{
     justify-content: end;
     align-items: center;
     padding-right: 20px;
+    z-index: 1;
 }
 
 .upgrade{
@@ -162,10 +167,6 @@ aside div:last-child div:last-child{
 }
 
 /* recently played */
-.central-main div:nth-child(2){
-    margin-bottom: 30px;
-}
-
 .central-main div:nth-child(2) h3{
     margin-bottom: 15px;
     color: white;
@@ -186,22 +187,28 @@ aside div:last-child div:last-child{
     margin-bottom: 5px;
 }
 
+.card{
+    position: relative;
+    color: white;
+}
+
 .card:hover .overlay{
     opacity: 1;
 }
 
 .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
+    height: 100%;
     width: 100%;
     opacity: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
 }
 
 /* for John Doe */
-.central-main div:nth-child(3) div:first-child{
-    margin-bottom: 15px;
-}
-
 .central-main div:nth-child(3) div{
     gap: 20px;
 }
@@ -218,10 +225,6 @@ aside div:last-child div:last-child{
 }
 
 /* popular artists */
-.central-main div:nth-child(4) div:first-child{
-    margin-bottom: 15px;
-}
-
 .central-main div:nth-child(4) div{
     gap: 20px;
 }
@@ -231,7 +234,7 @@ aside div:last-child div:last-child{
     text-align: center;
 }
 
-.central-main div:nth-child(4) div img{
+.central-main div:nth-child(4) div div img{
     width: 100%;
     height: auto;
     border-radius: 100%;
@@ -336,8 +339,12 @@ h5:hover{
     color: greenyellow;
 }
 
-span:hover, li:hover, label:hover{
+span:hover, li:hover, label:hover, i:hover{
     color: white;
+}
+
+i:hover{
+    transform: scale(1.1);
 }
 
 

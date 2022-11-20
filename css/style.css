@@ -76,7 +76,7 @@ aside div:first-child div:first-child{
 }
 
 /* menù */
-aside div:first-child div:nth-child(2){
+aside div:first-child div:nth-child(2) div{
     align-items: center;
 }
 
@@ -90,9 +90,25 @@ aside div:first-child div:nth-child(2) *{
     height: auto;
 }
 
+/* playlist */
+.fa-plus{
+    background-color: grey;
+    padding: 5px;
+}
+
+.playlist-list{
+    height: 150px;
+    overflow-y: auto;
+}
+
+li{
+    list-style: none;
+    color: grey;
+}
+
 
 /* John Doe */
-aside div:last-child div:first-child{
+aside div:last-child .download{
     font-size: x-small;
     padding-bottom: 5px;
     border-bottom: 1px solid grey;

@@ -21,6 +21,14 @@
     .menu-s{
         margin-right: 5px;
     }
+
+    aside{
+        width: 200px;
+    }
+
+    .main-content, .topbar{
+        width: calc(100% - 200px);
+    }
 }
 
 /* =============== Tablet =============== */

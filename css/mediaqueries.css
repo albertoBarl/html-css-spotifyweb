@@ -1,4 +1,30 @@
-@media screen and (min-width: 768px) {
+/* =============== Mobile =============== */
+@media screen and (max-width: 575px){
+    aside div:last-child div:first-child{
+        border: none;
+    }
+
+    aside div:last-child *{
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 576px){
+    .d-none{
+        display: block;
+    }
+
+    .logo-s{
+        display: none;
+    }
+
+    .menu-s{
+        margin-right: 5px;
+    }
+}
+
+/* =============== Tablet =============== */
+@media screen and (min-width: 768px){
     .footer-left div:nth-child(2){
         flex-direction: row;
     }

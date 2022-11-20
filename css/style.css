@@ -36,48 +36,76 @@
     margin-right: 5px;
 }
 
+.d-none{
+    display: none;
+}
 
 /* ================================= MAIN ================================= */
-
-/* ===== side bar ===== */
-.aside .container{
-    width: 75px;
+main{
+    background-color: green;
     height: calc(100vh - 100px);
-    background-color: black;
-    flex-direction: column;
-    align-items:center ;
-    padding-top: 5px;
-    position: relative;
+}
+
+/* ========== sidebar ========== */
+aside{
+    height: 100%;
+    min-width: 25px;
+    background-color: brown;
     justify-content: space-between;
-}
-
-.logo, .nav, .nav div{
     align-items: center;
-    flex-direction: column;
-    margin-bottom: 20px;
+    padding: 20px 10px 10px 10px;
 }
 
-.side-icon{
-    font-size: xx-large;
-    color: white;
+aside div{
+    width: 100%;
 }
 
-.grey{
-    color: #a3a3a3;
+/* logo */
+aside div:first-child div:first-child{
+    margin-bottom: 10px;
 }
 
-.john-doe div:last-child{
-    font-size: xx-large;
+.logo{
+    width: 100px;
+    height: auto;
+}
+
+.logo-s{
+    width: 25px;
+    height: auto;
+}
+
+/* menù */
+aside div:first-child div:nth-child(2){
     align-items: center;
-    padding-bottom: 10px;
-    margin-top: 10px;
 }
 
-.fa-circle-down{
+
+aside div:first-child div:nth-child(2) *{
+    margin-bottom: 3px;
+}
+
+.menu-s{
+    width: 25px;
+    height: auto;
+}
+
+
+/* John Doe */
+aside div:last-child div:first-child{
+    font-size: x-small;
+    padding-bottom: 5px;
+    border-bottom: 1px solid grey;
+    gap: 5px;
+}
+
+aside div:last-child div:last-child{
+    margin-top: 5px;
     font-size: small;
+    gap: 5px;
 }
 
-/* top bar */
+
 
 
 /* ================================= FOOTER ================================= */
@@ -99,7 +127,7 @@ footer{
     color: white;
 }
 
-/* === footer left === */
+/* ========== footer left ========== */
 .footer-left{
     align-items: center;
     justify-content: space-between;
@@ -115,7 +143,7 @@ footer{
     gap: 10px;
 }
 
-/* === footer center === */
+/* ========== footer center ========== */
 .footer-center{
     width: 50%;
     gap: 20px;
@@ -146,7 +174,7 @@ footer{
     border-radius: 20%;
 }
 
-/* === footer right === */
+/* ========== footer right ========== */
 .footer-right{
     width: 25%;
     align-items: center;

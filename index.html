@@ -4,68 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-trial.css">
     <link rel="stylesheet" href="./css/mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Spotify Web</title>
 </head>
 <body>
-    <main>
-            <!-- side bar -->
-            <aside class="aside flex">
-                <div class="container flex">
-                    <div>
-                        <!-- logo -->
-                        <div class="logo flex">
-                            <div class="flex">
-                                <i class="fa-brands fa-spotify side-icon "></i>
-                                <span class="d-none">Spotify</span>
-                            </div>
-                        </div>
-    
-                        <!-- nav -->
-                            <div class="nav flex">
-                                <div class="flex">
-                                    <i class="fa-solid fa-house side-icon grey"></i>
-                                    <span class="d-none">Home</span>
-                                </div>
-                                <div class="flex">
-                                    <i class="fa-solid fa-magnifying-glass side-icon grey"></i>
-                                    <span class="d-none">Cerca</span>
-                                </div>
-                                <div class="flex">
-                                    <i class="fa-solid fa-lines-leaning side-icon grey"></i>
-                                    <span class="d-none">La tua libreria</span>
-                                </div>
-                            </div>
-    
-                        <!-- playlist -->
-                        <div class="playlist d-none">
-                            <div class="flex">
-                                <h4>PLAYLIST</h4>
-                                <i class="fa-solid fa-plus"></i>
-                                <span>Crea nuova playlist</span>
-                            </div>
-                        </div>
+    <!-- MAIN -->
+    <main class="flex">
+            <!-- sidebar -->
+            <aside class="flex f-column">
 
+                <!-- menù / playlist -->
+                <div class="flex f-column">
+                    <!-- logo -->
+                    <div class="flex">
+                        <img src="./img/logo.svg" alt="IMG not available" class="logo d-none">
+                        <img src="./img/logo-small.svg" alt="IMG not available" class="logo-s">              
                     </div>
 
-                    <!-- John Doe -->
-                    <div class="john-doe flex">
-                        <div class="flex f-column">
-                            <div class="flex">
-                                <i class="fa-solid fa-circle-down grey"></i>
-                                <span class="grey d-none">Installa app</span>
-                            </div>
-                            <div class="flex">
-                                <i class="fa-solid fa-circle-user grey"></i>
-                                <h4 class="white d-none">John Doe</h4>
-                            </div>
+                    <!-- menù -->
+                    <div>
+                        <div class="flex">
+                            <img src="./img/home.svg" alt="" class="menu-s">                            
+                            <h5 class="d-none">Home</h5>
                         </div>
+                        <div class="flex">
+                            <img src="./img/search.svg" alt="" class="menu-s">
+                            <h5 class="d-none">Cerca</h5>
+                        </div>
+                        <div class="flex">
+                            <img src="./img/libreria.svg" alt="" class="menu-s">
+                            <h5 class="d-none">La tua libreria</h5>
+                        </div>
+                    </div>
+
+                    <!-- playlist -->
+                    <div class="d-none">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <!-- John Doe -->
+                <div class="flex f-column">
+                    <div class="flex">
+                        <i class="fa-solid fa-circle-down grey"></i>
+                        <span class="grey d-none">Installa app</span>
+                    </div>
+                    <div class="flex">
+                        <i class="fa-solid fa-circle-user grey"></i>
+                        <h5 class="white d-none">John Doe</h5>
                     </div>
                 </div>
             </aside>
             
+            <!-- main content -->
+            <div class="main-content">
+
+                <!-- topbar -->
+                <div class="topbar"></div>
+
+                <!-- central main -->
+                <div class="central-main"></div>
+            </div>
     </main>
 
     <!-- FOOTER -->
